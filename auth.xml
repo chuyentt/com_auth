@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="upgrade">
+    <name>com_auth</name>
+    <creationDate>2015-02-25</creationDate>
+    <copyright>Bản quyền (C) 2015. Các quyền đều được bảo vệ.</copyright>
+    <license>bản quyền mã nguồn mở GNU phiên bản 2</license>
+    <author>Chuyen Trung Tran</author>
+    <authorEmail>chuyentt@gmail.com</authorEmail>
+    <authorUrl>http://www.geomatics.vn</authorUrl>
+    <version>1.0.0</version>
+    <description>COM_AUTH_XML_DESCRIPTION</description>
+
+    <files folder="site">
+        <filename>index.html</filename>
+        <filename>auth.php</filename>
+        <filename>controller.php</filename>
+        <filename>router.php</filename>
+        <folder>controllers</folder>
+        <folder>helpers</folder>
+    </files>
+    <languages folder="languages/site">
+            <language tag="en-GB">en-GB/en-GB.com_auth.ini</language>
+            <language tag="vi-VN">vi-VN/vi-VN.com_auth.ini</language>
+    </languages>
+    <administration>
+        <files folder="administrator">
+            <filename>index.html</filename>
+            <filename>auth.php</filename>
+        </files>
+        <languages folder="languages/administrator">
+            <language tag="en-GB">en-GB/en-GB.com_auth.ini</language>
+            <language tag="en-GB">en-GB/en-GB.com_auth.sys.ini</language>
+            <language tag="vi-VN">vi-VN/vi-VN.com_auth.ini</language>
+            <language tag="vi-VN">vi-VN/vi-VN.com_auth.sys.ini</language>
+        </languages>
+    </administration>
+</extension>
