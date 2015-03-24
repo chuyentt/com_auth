@@ -49,6 +49,7 @@ class AuthControllerUser extends AuthController {
 	{
 		$response->email = JFactory::getUser()->email;
 		$response->status = JAuthentication::STATUS_SUCCESS;
+        $response->token = JSession::getFormToken() . '=1';
 		header('Content-type: application/json');
 		header('Token:'.JSession::getFormToken());
 		echo json_encode($response);
